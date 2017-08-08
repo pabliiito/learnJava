@@ -1,15 +1,21 @@
 package Lesson1;
 
-import sun.management.counter.Variability;
+import java.util.Scanner;
 
 public class Calculator {
 	
 	public static void main(String[] args) {
-		int a = ;//fill in
-		int b = ;//fill in 
 		
-		int result = ;// sum of a and b
-		System.out.println(result);
+		Scanner in = new Scanner(System.in);
+		System.out.println("Insert number a");
+		int a = in.nextInt();
+		
+		System.out.println("Insert number b");
+		int b = in.nextInt();
+		
+		
+		int result = a + b;// sum of a and b
+		System.out.println( " El resultado de la suma es " + result);
 	}
 
 }

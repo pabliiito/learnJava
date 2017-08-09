@@ -26,13 +26,13 @@ public class ObjectesAndPrimitives {
 		// Esta un ArrayList 
 		// Leer en internet: google: ArrayList Java
 		ArrayList<Integer> firstList = new ArrayList<Integer>();
-		firstList.add(0);
-		firstList.add(1);
-		firstList.add(3);
+		firstList.add(10);
+		firstList.add(9);
+		firstList.add(8);
 		System.out.println("firstList " + firstList);
 		ArrayList<Integer> secondList = firstList;
 		System.out.println("secondList " + secondList);
-		secondList.add(6);
+		secondList.add(7);
 		System.out.println("secondList After " + secondList);
 		System.out.println("firstList After " + firstList); // Porque firstList == [1, 2, 3, 4] ???
 		
@@ -42,11 +42,11 @@ public class ObjectesAndPrimitives {
 		// Leer en internet: google: for-loop y while-loop
 		
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		int j = 0;
-		for(int i = 0; i < 10; i++){
+		
+		for(int i = 10; i >= 1; i--){
 			
-			list.add(j + i );
-			j += i;
+			list.add(i + 0 );
+			
 		    
 		}
 		System.out.println("list" + list); //[5, 6, 7, 8, 9, 10, 11, 12, 13, 14]

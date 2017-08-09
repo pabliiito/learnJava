@@ -13,28 +13,28 @@ public class ObjectesAndPrimitives {
 		// Leer en internet: google: diferencia OBJECTS y PRIMITIVES JAVA
 		
 		// Esta un primitiv 
-		int firstNum = 5;
-		System.out.println("firstNum" + firstNum);
-		int secondNum = firstNum;
-		System.out.println("secondNum" + secondNum);
-		secondNum = 8;
+		int num1 = 10;
+		System.out.println("firstNum " + num1);
+		int secondNum = num1;
+		System.out.println("secondNum " + secondNum);
+		secondNum = 20;
 		System.out.println("secondNum After " + secondNum);
-		System.out.println("firstNum After " + firstNum);
+		System.out.println("firstNum After " + num1);
 		
 		System.out.println("\n ---------------- \n");
 		
 		// Esta un ArrayList 
 		// Leer en internet: google: ArrayList Java
 		ArrayList<Integer> firstList = new ArrayList<Integer>();
-		firstList.add(1);
 		firstList.add(2);
-		firstList.add(3);
-		System.out.println("firstList" + firstList);
+		firstList.add(4);
+		firstList.add(6);
+		System.out.println("firstList " + firstList);
 		ArrayList<Integer> secondList = firstList;
-		System.out.println("secondList" + secondList);
-		secondList.add(4);
-		System.out.println("secondList After" + secondList);
-		System.out.println("firstList After" + firstList); // Porque firstList == [1, 2, 3, 4] ???
+		System.out.println("secondList " + secondList);
+		secondList.add(8);
+		System.out.println("secondList After " + secondList);
+		System.out.println("firstList After " + firstList); // Porque firstList == [1, 2, 3, 4] ???
 		
 		System.out.println("\n ---------------- \n");
 		
@@ -42,8 +42,8 @@ public class ObjectesAndPrimitives {
 		// Leer en internet: google: for-loop y while-loop
 		
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		for(int i=0; i < 10; i++){
-			list.add(i + 5);
+		for(int i = 0; i < 10; i++){
+			list.add(i * 2);
 		}
 		System.out.println("list" + list); //[5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 		

@@ -41,14 +41,24 @@ public class ObjectesAndPrimitives {
 		// Esta un loop 
 		// Leer en internet: google: for-loop y while-loop
 		
-		ArrayList<Integer> list = new ArrayList<Integer>();
+		ArrayList<String> list = new ArrayList<String>();
 		
-		for(int i = 10; i >= 1; i--){
-			
-			list.add(i + 0 );
-			
+//        StringBuilder sb = new StringBuilder();
+//        sb.append("");
+//        for(int i=1;i<=8;i++){
+//        	sb.append(i);
+//        	list.add(Integer.valueOf(sb.toString()));
+//         }
+        
+        String string = "";
+        
+        for(int i=1;i<=8;i++){
+        	string = string + Integer.toString(i);
+        	list.add(string);
+         }
+        
 		    
-		}
+		
 		System.out.println("list" + list); //[5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 		
 		// TAREA
@@ -57,10 +67,15 @@ public class ObjectesAndPrimitives {
 		// 3) make a list like: [0,1,3,6,10,15,21,28,36,45] with a loop
 		// 4) make a list like: [10,9,8,7,6,5,4,3,2,1] with a loop
 		// 5) make a list like: [1,12,123,1234,12345,123456,1234567,12345678] with a loop
-		
-		
 	}
+}
+	
+
+
+
 	
 	
 
-}
+
+
+

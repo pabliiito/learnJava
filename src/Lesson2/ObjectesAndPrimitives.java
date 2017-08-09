@@ -28,11 +28,11 @@ public class ObjectesAndPrimitives {
 		ArrayList<Integer> firstList = new ArrayList<Integer>();
 		firstList.add(0);
 		firstList.add(1);
-		firstList.add(4);
+		firstList.add(3);
 		System.out.println("firstList " + firstList);
 		ArrayList<Integer> secondList = firstList;
 		System.out.println("secondList " + secondList);
-		secondList.add(9);
+		secondList.add(6);
 		System.out.println("secondList After " + secondList);
 		System.out.println("firstList After " + firstList); // Porque firstList == [1, 2, 3, 4] ???
 		
@@ -42,8 +42,12 @@ public class ObjectesAndPrimitives {
 		// Leer en internet: google: for-loop y while-loop
 		
 		ArrayList<Integer> list = new ArrayList<Integer>();
+		int j = 0;
 		for(int i = 0; i < 10; i++){
-			list.add(i * i);
+			
+			list.add(j + i );
+			j += i;
+		    
 		}
 		System.out.println("list" + list); //[5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 		
